@@ -25,7 +25,7 @@ Folow the preparation carefully. Do this before the challenge timeframe, so we c
 - You can use the skype chat during the 60 mins, for your questions
 - You can use whatever environment you feel confortable with (IDE, Operating System)
 - Of course you can use the internet for research - but not other people or robots
-- You only get **one try**, so be prepared and ready
+- You only have **one try**, so be prepared and ready
 
 ## Presentation
 - If we your result, we'll invite you to our office in Flamatt (Switzerland)
