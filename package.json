@@ -1,0 +1,21 @@
+{
+  "name": "frontend-challenge",
+  "version": "1.0.0",
+  "description": "Frontend challenge for candidates",
+  "author": "",
+  "main": "scripts/start.js",
+  "scripts": {
+    "start": "node .",
+    "initialize": "node scripts/initialize.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scout24-CH/frontend-challenge.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "data-store": "^3.1.0",
+    "fs-extra": "^7.0.1"
+  }
+}
