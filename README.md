@@ -20,7 +20,7 @@ Folow the preparation carefully. Do this before the challenge timeframe, so we c
 
 ## Work
 - 60 minutes
-- Sending back your solution must be in the 60 mins timeframe.
+- You must send back your solution within the 60 minuts timeframe.
 - As soon as you're ready, you'll get the challenge tasks in a file, over skype.
 - You can use the skype chat during the 60 mins, for your questions
 - You can use whatever environment you feel confortable with (IDE, Operating System)
