@@ -6,7 +6,7 @@
   "main": "scripts/start.js",
   "scripts": {
     "start": "node .",
-    "initialize": "node scripts/initialize.js"
+    "reset-db": "node scripts/reset-db.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,8 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "data-store": "^3.1.0",
-    "fs-extra": "^7.0.1"
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "morgan": "^1.9.1"
   }
 }

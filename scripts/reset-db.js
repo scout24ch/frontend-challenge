@@ -2,8 +2,8 @@ const path = require('path')
 const fs = require('fs-extra')
 const { config } = require('./lib')
 
-const initialize = async () => {
+const resetDb = async () => {
   console.log(config)
 }
 
-initialize()
+resetDb()

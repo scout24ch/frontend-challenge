@@ -15,8 +15,8 @@ Folow the preparation carefully. Do this before the challenge timeframe, so we c
 3. Navigate to the folder and run `npm i`
 4. Run `npm start`
 5. This will bring up a simple dev server and an API, make sure you see **both**
-   - [ ] [localhost:8080](http://localhost:8080) should show **Happy coding!**
-   - [ ] [localhost:8081](http://localhost:8081) should show `{ message: 'happy coding!' }`
+   - [ ] [localhost:8080](http://localhost:8080) should show **Happy coding!** inside of a dark box
+   - [ ] [localhost:8081](http://localhost:8081) should show `{"message":"api works"}`
 
 ## Work
 - 60 minutes

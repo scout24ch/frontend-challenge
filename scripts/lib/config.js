@@ -1,5 +1,6 @@
 const path = require('path')
 
 module.exports = {
-  storeFile: path.join(__dirname, '..', '..', 'api', 'store.json')
+  storageFile: path.join(__dirname, 'storage', 'store.json'),
+  webroot: path.join(__dirname, '..', '..', 'webroot')
 }
