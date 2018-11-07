@@ -28,7 +28,7 @@ Folow the preparation carefully. Do this before the challenge timeframe, so we c
 - You only get **one try**, so be prepared and ready
 
 ## Presentation
-- If we like what you did, we'll invite you to our office in Flamatt (Switzerland)
-- You get the chance to explain your code 
-- Face to face, the audience are a couple of Scout24 developers and HR
-- The presentation includes a Q/A session afterwards
+- If we your result, we'll invite you to our office in Flamatt (Switzerland)
+- You get the chance to present and discuss your code 
+- In front of an audience of a couple of Scout24 developers and HR
+- A Q/A session follows the presentation, where we discuss some details
