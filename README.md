@@ -14,7 +14,7 @@ Folow the preparation carefully. Do this before the challenge timeframe, so we c
 2. [Download](https://github.com/Scout24-CH/frontend-challenge/archive/master.zip) and unpack this repository.
 3. Navigate to the folder and run `npm i`
 4. Run `npm start` - this will bring up a simple dev server and an API
-5. Navigate to [localhost:8080](http://localhost:8080) - and you should see this
+5. Navigate to [http://localhost:8080](http://localhost:8080) - and you should see this:
 
 ![browser.png](docs/browser.png)
 
