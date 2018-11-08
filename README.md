@@ -16,7 +16,7 @@ Folow the preparation carefully. Do this before the challenge timeframe, so we c
 4. Run `npm start`
 5. This will bring up a simple dev server and an API
 
-You're all set, if your browser looks like this  
+You're all set, if your browser looks like this:  
 ![browser.png](docs/browser.png)
 
 ## Work
