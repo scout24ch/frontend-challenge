@@ -1,7 +1,5 @@
 # Scout24 frontend challenge
-Allong with this zip, you also got
-- an appointment timeframe, when the challenge happens
-- a skype account to connect with, before the challenge
+Allong with the link to this repository, you got also an appointment timeframe, when the challenge happens.
 
 ## Three steps to pass the challenge
 1. [Preparation](#preparation)
@@ -10,25 +8,27 @@ Allong with this zip, you also got
 
 ## Preparation 
 Folow the preparation carefully. Do this before the challenge timeframe, so we can start right ahead.
-1. Install [git](https://git-scm.com/downloads) and [node 8+](https://nodejs.org/en/download/)
-2. [Download](https://github.com/Scout24-CH/frontend-challenge/archive/master.zip) and unpack this repository.
-3. Navigate to the folder and run `npm i`
-4. Run `npm start` - this will bring up a simple dev server and an API
-5. Navigate to [http://localhost:8080](http://localhost:8080) - and you should see this:
+1. Install [Skype](https://www.skype.com/en/), [git](https://git-scm.com/downloads) and [node 8+](https://nodejs.org/en/download/)
+2. Connect to the Skype account you received and say "Hi, I'm preparing for the frontend challenge"
+3. [Download this repository](https://github.com/Scout24-CH/frontend-challenge/archive/master.zip) and unpack it
+4. Navigate to it's folder and run `npm i`
+5. Run `npm start` - this will bring up a simple web server and an API
+6. Navigate to [http://localhost:8080](http://localhost:8080) - and you should see this:
 
 ![browser.png](docs/browser.png)
 
 ## Work
-- 60 minutes
-- You must send back your solution within the 60 minuts timeframe.
-- As soon as you're ready, you'll get the challenge tasks in a file, over skype.
-- You can use the skype chat during the 60 mins, for your questions
-- You can use whatever environment you feel confortable with (IDE, Operating System)
-- Of course you can use the internet for research - but not other people or robots
-- You only have **one try**, so be prepared and ready
+- You'll get the challenge description at the beginning, via Skype
+- Time is 60 minutes
+- Within this 60 minutes, you must send back your solution by skype or E-Mail
+- You may ask us questions via skype, during the whole challenge.
+- Code in whatever environment you feel confortable (IDE, Operating System)
+- You may use the internet for research
+- You can not use the help of other people or robots
+- You only have **one try**, please be prepared and ready
 
 ## Presentation
-- If we your result, we'll invite you to our office in Flamatt (Switzerland)
+- If we like your work, we'll invite you to our office in Flamatt (Switzerland)
 - You get the chance to present and discuss your code 
-- In front of an audience of a couple of Scout24 developers and HR
+- A couble of Scout24 developers and HR will be your audience
 - A Q/A session follows the presentation, where we discuss some details
