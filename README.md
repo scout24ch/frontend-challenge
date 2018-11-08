@@ -33,5 +33,5 @@ Folow the preparation carefully. Do this before the challenge timeframe, so we c
 ## Presentation
 - If we like your work, we'll invite you to our office in Flamatt (Switzerland)
 - You get the chance to present and discuss your code 
-- A couble of Scout24 developers and HR will be your audience
+- A couple of Scout24 developers and HR will be your audience
 - A Q/A session follows the presentation, where we discuss some details
