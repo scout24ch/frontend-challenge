@@ -5,7 +5,7 @@
   "author": "",
   "main": "scripts/start.js",
   "scripts": {
-    "start": "node .",
+    "start": "nodemon --ignore scripts/lib/storage/store.json .",
     "reset-db": "node scripts/reset-db.js"
   },
   "repository": {
@@ -15,9 +15,13 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
+    "cors": "^2.8.5",
     "data-store": "^3.1.0",
     "express": "^4.16.4",
     "fs-extra": "^7.0.1",
     "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
   }
 }

@@ -2,15 +2,28 @@ const http = require('http')
 const express = require('express')
 const morgan = require('morgan')
 const chalk = require('chalk')
+const cors = require('cors')
 
 class Server {
-  constructor(port, name) {
+  constructor({ port, log, allowedOrigins = [] }) {
+    this.port = port
+    this.log = log
+    this.name = this.constructor.name
 
     // create express application
     const app = express()
     
-    // add a basic logger
-    app.use(morgan(`${chalk.cyan(name)} :method :url :status`))
+    // add logging
+    app.use(morgan((tokens, req, res) => {
+      log(
+        tokens.url(req, res),
+        tokens.method(req, res),
+        tokens.status(req, res),
+        tokens.res(req, res, 'content-length'), '-',
+        tokens['response-time'](req, res), 'ms'
+      )
+      return null
+    }))
   
     // set port
     app.set('port', port)
@@ -18,7 +31,7 @@ class Server {
     // set some headers
     app.use((req, res, next) => {
       res.setHeader('Connection', 'close')
-      res.setHeader('X-Powered-By', name)
+      res.setHeader('X-Powered-By', this.name)
       next()
     })
     
@@ -29,7 +42,16 @@ class Server {
       res.status(err.status || 500)
       res.end(err.message)
     })
-  
+
+    // add cors and preflight to all routes
+    if (allowedOrigins.length) {
+      app.use('*', cors({
+        origin: (origin, callback) => allowedOrigins.includes(origin)
+          ? callback(null, true)
+          : callback(new Error('Not allowed by CORS'))
+      }))
+    }
+
     // create server
     const server = http.createServer(app)
   
@@ -42,14 +64,14 @@ class Server {
     })
   
     server.on('listening', () => {
-      console.log(chalk.cyan(name), `running... http://localhost:${port}`)
+      log('up and running.', chalk.cyan(`http://localhost:${port}`))
       if (process.send) {
         process.send('ready')
       }
     })
   
     const shutdown = signal => () => {
-      console.log(chalk.cyan(name), 'shuting down', signal)
+      log('shuting down', signal)
       server.close(err => {
         if (err) {
           console.error(err)
@@ -63,8 +85,6 @@ class Server {
 
     this.app = app
     this.server = server
-    this.port = port
-    this.name = name
     this.express = express
   }
   start () {

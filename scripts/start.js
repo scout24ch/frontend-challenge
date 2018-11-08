@@ -1,3 +1,4 @@
+const chalk = require('chalk')
 const { ApiServer, WebServer } = require('./lib/servers')
 const { config, log } = require('./lib')
 
@@ -15,8 +16,19 @@ process.on('unhandledRejection', error => {
 
 // start servers
 const start = async () => {
-  await new WebServer(PORT_WEB, 'WEB', config.webroot)
-  await new ApiServer(PORT_API, 'API')
+  log.register('api', )
+  await new ApiServer({
+    port: PORT_API,
+    log: log.register('api', chalk.cyan, console.info),
+    allowedOrigins: [
+      'http://localhost:8080'
+    ]
+  })
+  await new WebServer({
+    port: PORT_WEB,
+    log: log.register('web', chalk.cyan, console.info),
+    webroot: config.webroot
+  })
 }
 
 start()
