@@ -10,7 +10,7 @@ Allong with this zip, you also got
 
 ## Preparation 
 Folow the preparation carefully. Do this before the challenge timeframe, so we can start right ahead.
-1. Install [git](https://git-scm.com/downloads) and [node 10+](https://nodejs.org/en/download/)
+1. Install [git](https://git-scm.com/downloads) and [node 8+](https://nodejs.org/en/download/)
 2. [Download](https://github.com/Scout24-CH/frontend-challenge/archive/master.zip) and unpack this repository.
 3. Navigate to the folder and run `npm i`
 4. Run `npm start` - this will bring up a simple dev server and an API
