@@ -10,7 +10,7 @@ const list = (req, res) => {
 
   const start = (page - 1) * pageSize
   search = search && search.trim() || ''
-  const searches = search.split(/\s+/)
+  const searches = search.toLowerCase().split(/\s+/)
   const list = store.list()
     .filter(item => {
       if (!searches.length) {
@@ -22,7 +22,7 @@ const list = (req, res) => {
         item.title,
         item.description,
         item.ingredients.reduce((acc, item) => acc + ' ' + item, '')
-      ].join(' ')
+      ].join(' ').toLowerCase()
 
       searches.forEach(search => {
         include = include || text.includes(search)
@@ -58,7 +58,7 @@ const del = (req, res) => {
     })
   }
 
-  res.json(store.get(id))
+  res.json(store.del(id))
 }
 
 const update = (req, res) => {
