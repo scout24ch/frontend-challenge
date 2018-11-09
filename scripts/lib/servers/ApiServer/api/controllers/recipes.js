@@ -58,7 +58,10 @@ const del = (req, res) => {
     })
   }
 
-  res.json(store.del(id))
+  const deleted = store.get(id)
+  store.del(id)
+
+  res.json(deleted)
 }
 
 const update = (req, res) => {
