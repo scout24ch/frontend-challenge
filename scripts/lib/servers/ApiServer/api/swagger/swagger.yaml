@@ -4,9 +4,6 @@ info:
   title: Recipes API
 host: localhost:8081
 basePath: /
-schemes:
-  - http
-  - https
 consumes:
   - application/json
 produces:
@@ -62,12 +59,12 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/Recipe'
+            $ref: '#/definitions/RecipePayload'
       responses:
         '201':
-          description: Success
+          description: Created
           schema:
-            $ref: "#/definitions/RecipeList"
+            $ref: "#/definitions/Recipe"
         '400':
           description: Bad Request
           schema:
@@ -89,7 +86,8 @@ paths:
           in: path
           description: Id of the recipe
           required: true
-          type: string
+          type: number
+          minimum: 0
       responses:
         "200":
           description: Success
@@ -97,6 +95,73 @@ paths:
             $ref: "#/definitions/Recipe"
         '400':
           description: Bad Request
+          schema:
+            $ref: "#/definitions/Error"
+        '404':
+          description: Not found
+          schema:
+            $ref: "#/definitions/Error"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/Error"
+    put:
+      operationId: update
+      description: Updates an existing recipe
+      tags:
+        - recipes
+      parameters:
+        - name: id
+          in: path
+          description: Id of the recipe
+          required: true
+          type: number
+          minimum: 0
+        - name: body
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/RecipePayload'
+      responses:
+        '200':
+          description: Updated
+          schema:
+            $ref: "#/definitions/Recipe"
+        '400':
+          description: Bad Request
+          schema:
+            $ref: "#/definitions/Error"
+        '404':
+          description: Not found
+          schema:
+            $ref: "#/definitions/Error"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/Error"
+    delete:
+      operationId: delete
+      description: Deletes an existing recipe
+      tags:
+        - recipes
+      parameters:
+        - name: id
+          in: path
+          description: Id of the recipe
+          required: true
+          type: number
+          minimum: 0
+      responses:
+        '200':
+          description: Deleted
+          schema:
+            $ref: "#/definitions/Recipe"
+        '400':
+          description: Bad Request
+          schema:
+            $ref: "#/definitions/Error"
+        '404':
+          description: Not found
           schema:
             $ref: "#/definitions/Error"
         default:
@@ -108,7 +173,62 @@ paths:
     x-swagger-pipe: swagger_raw
 
 definitions:
+  Ingredient:
+    required:
+      - name
+      - amount
+    properties:
+      name:
+        type: string
+      amount:
+        type: number
+        minimum: 0.1
+        default: 1
+      unit:
+        type: string
+        enum:
+          - g
+          - kg
+          - ml
+          - cl
+          - dl
+          - l
+          - cup
+          - tablespoon
+          - teaspoon
+          - pinch
+  IngredientList:
+    type: array
+    items:
+      $ref: "#/definitions/Ingredient"
   Recipe:
+    required:
+      - id
+      - title
+      - description
+      - created
+      - modified
+      - ingredients
+    properties:
+      id:
+        type: number
+      title:
+        type: string
+      description:
+        type: string
+      created:
+        type: string
+        format: date-time
+      modified:
+        type: string
+        format: date-time
+      ingredients:
+        $ref: "#/definitions/IngredientList"
+  RecipeList:
+    type: array
+    items:
+      $ref: "#/definitions/Recipe"
+  RecipePayload:
     required:
       - title
       - ingredients
@@ -120,29 +240,6 @@ definitions:
         type: string
       ingredients:
         $ref: "#/definitions/IngredientList"
-  RecipeList:
-    type: array
-    items:
-      $ref: "#/definitions/Recipe"
-  Ingredient:
-    required:
-      - name
-      - amount
-      - unit
-    properties:
-      name:
-        type: string
-      amount:
-        type: number
-        minimum: 0.1
-        default: 1
-      unit:
-        type: string
-        enum: [g, kg, ml, cl, dl, l, cup, tablespoon, teaspoon]
-  IngredientList:
-    type: array
-    items:
-      $ref: "#/definitions/Ingredient"
   Error:
     required:
       - message
