@@ -5,7 +5,7 @@
   "author": "",
   "main": "scripts/start.js",
   "scripts": {
-    "start": "nodemon --ignore scripts/lib/storage/store.json .",
+    "start": "nodemon --ignore scripts/lib/servers/ApiServer/api/Storage/stores/recipes.json .",
     "reset-db": "node scripts/reset-db.js"
   },
   "repository": {
@@ -19,7 +19,10 @@
     "data-store": "^3.1.0",
     "express": "^4.16.4",
     "fs-extra": "^7.0.1",
-    "morgan": "^1.9.1"
+    "js-yaml": "^3.12.0",
+    "morgan": "^1.9.1",
+    "swagger-express-mw": "^0.7.0",
+    "swagger-ui-express": "^4.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.6"

@@ -1,6 +1,6 @@
 const chalk = require('chalk')
 const { ApiServer, WebServer } = require('./lib/servers')
-const { config, log } = require('./lib')
+const { config, log, storage } = require('./lib')
 
 // set ports from env or use defaults
 const {

@@ -1,0 +1,136 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: Recipes App
+host: localhost:8081
+basePath: /
+schemes:
+  - http
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /recipes:
+    x-swagger-router-controller: recipes
+    get:
+      description: Returns a list of 'Recipes' to the caller
+      operationId: list
+      parameters:
+        - name: search
+          in: query
+          description: Full text search term
+          required: false
+          type: string
+        - name: page
+          in: query
+          description: The page of the list
+          required: false
+          type: number
+          default: 1
+        - name: pageSize
+          in: query
+          description: The page size of the lst
+          required: false
+          type: number
+          default: 10
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: "#/definitions/RecipeList"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    post:
+      description: Adds a recipe
+      operationId: add
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Recipe'
+      responses:
+        '201':
+          description: Success
+          schema:
+            $ref: "#/definitions/RecipeList"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+          
+  /recipes/{id}:
+    x-swagger-router-controller: recipes
+    get:
+      description: Returns a single 'Recipe' to the caller
+      operationId: get
+      parameters:
+        - name: id
+          in: path
+          description: Id of the recipe
+          required: true
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/Recipe"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    
+  /swagger:
+    x-swagger-pipe: swagger_raw
+
+definitions:
+  Recipe:
+    required:
+      - title
+      - ingredients
+      - description
+    properties:
+      title:
+        type: string
+      description:
+        type: string
+      preparationTime:
+        description: minutes
+        type: number
+      totalTime:
+        description: minutes
+        type: number
+      ingredients:
+        $ref: "#/definitions/IngredientList"
+  RecipeList:
+    type: array
+    items:
+      $ref: "#/definitions/Recipe"
+  Ingredient:
+    required:
+      - name
+      - amount
+      - unit
+    properties:
+      name:
+        type: string
+      amount:
+        type: number
+        minimum: 0.1
+      unit:
+        type: string
+        enum: [g, kg, ml, cl, dl, l, cup, tablespoon, teaspoon]
+  IngredientList:
+    type: array
+    items:
+      $ref: "#/definitions/Ingredient"
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
