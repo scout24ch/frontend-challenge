@@ -59,7 +59,7 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/RecipePayload'
+            $ref: '#/definitions/RecipePostPayload'
       responses:
         '201':
           description: Created
@@ -121,7 +121,7 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/RecipePayload'
+            $ref: '#/definitions/RecipePutPayload'
       responses:
         '200':
           description: Updated
@@ -228,11 +228,19 @@ definitions:
     type: array
     items:
       $ref: "#/definitions/Recipe"
-  RecipePayload:
+  RecipePostPayload:
     required:
       - title
       - ingredients
       - description
+    properties:
+      title:
+        type: string
+      description:
+        type: string
+      ingredients:
+        $ref: "#/definitions/IngredientList"
+  RecipePutPayload:
     properties:
       title:
         type: string
