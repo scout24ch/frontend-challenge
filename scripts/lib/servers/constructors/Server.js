@@ -18,8 +18,6 @@ class Server {
       log(
         chalk.green(tokens.method(req, res)),
         tokens.url(req, res)
-        // ,
-        // tokens.status(req, res)
       )
       return null
     }))
@@ -45,7 +43,7 @@ class Server {
     // add cors and preflight to all routes
     if (allowedOrigins.length) {
       app.use('*', cors({
-        origin: (origin, callback) => allowedOrigins.includes(origin)
+        origin: (origin, callback) => typeof origin === 'undefined' || allowedOrigins.includes(origin)
           ? callback(null, true)
           : callback(new Error('Not allowed by CORS'))
       }))

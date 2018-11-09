@@ -21,7 +21,7 @@ const start = async () => {
     port: PORT_API,
     log: log.register('api', chalk.cyan, console.info),
     allowedOrigins: [
-      'http://localhost:8080'
+      `http://localhost:${PORT_WEB}`
     ]
   })
   await new WebServer({
