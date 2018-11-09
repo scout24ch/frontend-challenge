@@ -1,7 +1,7 @@
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
     // wait for dom ready and call the api
-    fetch('http://localhost:8081/')
+    fetch('http://localhost:8081/healthcheck')
       .then(function (result) {
         return result.json()
       })

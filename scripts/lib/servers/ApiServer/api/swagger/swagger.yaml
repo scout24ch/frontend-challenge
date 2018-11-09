@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   version: "1.0.0"
-  title: Recipes App
+  title: Recipes API
 host: localhost:8081
 basePath: /
 schemes:
@@ -15,8 +15,10 @@ paths:
   /recipes:
     x-swagger-router-controller: recipes
     get:
-      description: Returns a list of 'Recipes' to the caller
       operationId: list
+      description: Returns a list of 'Recipes' to the caller
+      tags:
+        - recipes
       parameters:
         - name: search
           in: query
@@ -29,24 +31,32 @@ paths:
           required: false
           type: number
           default: 1
+          minimum: 1
         - name: pageSize
           in: query
           description: The page size of the lst
           required: false
           type: number
           default: 10
+          minimum: 10
       responses:
         '200':
           description: Success
           schema:
             $ref: "#/definitions/RecipeList"
+        '400':
+          description: Bad Request
+          schema:
+            $ref: "#/definitions/Error"
         default:
           description: Error
           schema:
-            $ref: "#/definitions/ErrorResponse"
+            $ref: "#/definitions/Error"
     post:
-      description: Adds a recipe
       operationId: add
+      description: Adds a recipe
+      tags:
+        - recipes
       parameters:
         - name: body
           in: body
@@ -58,16 +68,22 @@ paths:
           description: Success
           schema:
             $ref: "#/definitions/RecipeList"
+        '400':
+          description: Bad Request
+          schema:
+            $ref: "#/definitions/Error"
         default:
           description: Error
           schema:
-            $ref: "#/definitions/ErrorResponse"
+            $ref: "#/definitions/Error"
           
   /recipes/{id}:
     x-swagger-router-controller: recipes
     get:
-      description: Returns a single 'Recipe' to the caller
       operationId: get
+      description: Returns a single 'Recipe' to the caller
+      tags:
+        - recipes
       parameters:
         - name: id
           in: path
@@ -79,10 +95,14 @@ paths:
           description: Success
           schema:
             $ref: "#/definitions/Recipe"
+        '400':
+          description: Bad Request
+          schema:
+            $ref: "#/definitions/Error"
         default:
           description: Error
           schema:
-            $ref: "#/definitions/ErrorResponse"
+            $ref: "#/definitions/Error"
     
   /swagger:
     x-swagger-pipe: swagger_raw
@@ -98,12 +118,6 @@ definitions:
         type: string
       description:
         type: string
-      preparationTime:
-        description: minutes
-        type: number
-      totalTime:
-        description: minutes
-        type: number
       ingredients:
         $ref: "#/definitions/IngredientList"
   RecipeList:
@@ -121,6 +135,7 @@ definitions:
       amount:
         type: number
         minimum: 0.1
+        default: 1
       unit:
         type: string
         enum: [g, kg, ml, cl, dl, l, cup, tablespoon, teaspoon]
@@ -128,9 +143,13 @@ definitions:
     type: array
     items:
       $ref: "#/definitions/Ingredient"
-  ErrorResponse:
+  Error:
     required:
       - message
     properties:
       message:
         type: string
+      errors:
+        type: array
+        items:
+          type: object

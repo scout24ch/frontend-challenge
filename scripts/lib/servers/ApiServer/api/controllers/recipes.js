@@ -23,9 +23,18 @@ const get = (req, res) => {
   })
 }
 
-const add = (req, res) => {
-  console.log(req.swagger.params)
-  res.json({})
+const add = async (req, res) => {
+  const { body: bodyParam} = req.swagger.params
+  const { value, valid, error } = bodyParam
+
+  console.log(value, valid, error)
+
+  if (!valid) {
+    // throw new Error(error)
+  }
+
+
+  res.end()
 }
 
 module.exports = {

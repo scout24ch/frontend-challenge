@@ -28,8 +28,8 @@ class ApiServer extends Server {
       // add docs route
       this.app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
-      // default route
-      this.app.use('/', (req, res, next) => res.json({ message: 'API works' }))
+      // healthcheck route
+      this.app.use('/healthcheck', (req, res, next) => res.json({ message: 'API works' }))
 
       // start server
       this.start()
