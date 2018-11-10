@@ -10,7 +10,6 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* DEMO only, you probably want to remove this rule */
 .frontend-challenge-demo-box {
   margin: 42px auto;
   border-radius: 4px;
@@ -21,4 +20,15 @@ body {
   text-align: center;
 	background-color: #222;
   color: #dedede;
+}
+
+.frontend-challenge-demo-box .docs-link {
+  display: none;
+  font-weight: 600;
+  color: #60afd0;
+  text-decoration: none;
+}
+
+.frontend-challenge-demo-box .docs-link:hover {
+  text-decoration: underline;
 }
