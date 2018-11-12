@@ -34,8 +34,8 @@ paths:
           description: The page size of the lst
           required: false
           type: number
-          default: 10
-          minimum: 10
+          default: 5
+          minimum: 5
       responses:
         '200':
           description: Success
@@ -227,9 +227,21 @@ definitions:
       ingredients:
         $ref: "#/definitions/IngredientList"
   RecipeList:
-    type: array
-    items:
-      $ref: "#/definitions/Recipe"
+    required:
+      - currentPage
+      - totalPages
+      - recipes
+    properties:
+      currentPage:
+        type: number
+        minimum: 1
+      totalPages:
+        type: number
+        minimum: 1
+      recipes:
+        type: array
+        items:
+          $ref: "#/definitions/Recipe"
   RecipePostPayload:
     required:
       - title
