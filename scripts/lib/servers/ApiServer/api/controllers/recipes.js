@@ -12,7 +12,6 @@ const list = (req, res) => {
   search = search && search.trim() || ''
   const searches = search.toLowerCase().split(/\s+/)
   const list = store.list()
-  const recipes = list
     .filter(item => {
       if (!searches.length) {
         return true
@@ -31,11 +30,11 @@ const list = (req, res) => {
 
       return include
     })
-    .slice(start, start + pageSize)
+  const recipes = list.slice(start, start + pageSize)
 
   res.json({
     currentPage: page,
-    totalPages: Math.ceil(recipes.length / pageSize),
+    totalPages: Math.ceil(list.length / pageSize),
     recipes
   })
 }
