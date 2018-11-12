@@ -62,7 +62,399 @@
     "created": "2018-11-09T16:35:03.922Z",
     "modified": "2018-11-09T16:35:03.922Z"
   },
+  "2": {
+    "title": "Crock Pot Roast",
+    "description": "Place beef roast in crock pot.\n\nMix the dried mixes together in a bowl and sprinkle over the roast.\n\nPour the water around the roast.\n\nCook on low for 7-9 hours.",
+    "ingredients": [
+      {
+        "name": " beef roast",
+        "amount": 1
+      },
+      {
+        "name": "brown gravy mix",
+        "amount": 1
+      },
+      {
+        "name": "dried Italian salad dressing mix",
+        "amount": 1
+      },
+      {
+        "name": "dry ranch dressing mix",
+        "amount": 1
+      },
+      {
+        "name": "water",
+        "amount": 0.5,
+        "unit": "cup"
+      }
+    ],
+    "id": "2",
+    "created": "2018-11-12T12:06:36.944Z",
+    "modified": "2018-11-12T12:06:36.944Z"
+  },
+  "3": {
+    "title": "Roasted Asparagus",
+    "description": "Preheat oven to 425°F.\n\nCut off the woody bottom part of the asparagus spears and discard.\n\nWith a vegetable peeler, peel off the skin on the bottom 2-3 inches of the spears (this keeps the asparagus from being all.\",string.\", and if you eat asparagus you know what I mean by that).\n\nPlace asparagus on foil-lined baking sheet and drizzle with olive oil.\n\nSprinkle with salt.\n\nWith your hands, roll the asparagus around until they are evenly coated with oil and salt.\n\nRoast for 10-15 minutes, depending on the thickness of your stalks and how tender you like them.\n\nThey should be tender when pierced with the tip of a knife.\n\nThe tips of the spears will get very brown but watch them to prevent burning.\n\nThey are great plain, but sometimes I serve them with a light vinaigrette if we need something acidic to balance out our meal.",
+    "ingredients": [
+      {
+        "name": " asparagus",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "amount": 1.5,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "kosher salt",
+        "amount": 1,
+        "unit": "teaspoon"
+      }
+    ],
+    "id": "3",
+    "created": "2018-11-12T12:06:48.957Z",
+    "modified": "2018-11-12T12:06:48.957Z"
+  },
+  "4": {
+    "title": "Curried Lentils and Rice",
+    "description": "Bring broth to a low boil.\n\nAdd curry powder and salt.\n\nCook lentils for 20 minutes.\n\nAdd rice and simmer for 20 minutes.\n\nEnjoy!",
+    "ingredients": [
+      {
+        "name": "beef broth",
+        "amount": 2.5,
+        "unit": "dl"
+      },
+      {
+        "name": "dried green lentils",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "basmati rice",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "curry powder",
+        "amount": 1,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "teaspoon"
+      }
+    ],
+    "id": "4",
+    "created": "2018-11-12T12:06:58.854Z",
+    "modified": "2018-11-12T12:06:58.854Z"
+  },
+  "5": {
+    "title": "Big Night Pizza",
+    "description": "Add hot water to yeast in a large bowl and let sit for 15 minutes.\n\nMix in oil, sugar, salt, and flour and let sit for 1 hour.\n\nKnead the dough and spread onto a pan.\n\nSpread pizza sauce and sprinkle cheese.\n\nAdd any optional toppings as you wish.\n\nBake at 400 deg Fahrenheit for 15 minutes.\n\nEnjoy!",
+    "ingredients": [
+      {
+        "name": "yeast",
+        "amount": 5,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "flour",
+        "amount": 5,
+        "unit": "cup"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": 4,
+        "unit": "tablespoon"
+      },
+      {
+        "name": "sugar",
+        "amount": 2,
+        "unit": "tablespoon"
+      },
+      {
+        "name": "salt",
+        "amount": 2,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "hot water",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "pizza sauce",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "mozzarella cheese",
+        "amount": 0.75,
+        "unit": "cup"
+      }
+    ],
+    "id": "5",
+    "created": "2018-11-12T12:07:06.776Z",
+    "modified": "2018-11-12T12:07:06.776Z"
+  },
+  "6": {
+    "title": "Cranberry and Apple Stuffed Acorn Squash Recipe",
+    "description": "Cut squash in half, remove seeds.\n\nPlace squash in baking dish, cut-side down.\n\nPour 1/4-inch water into dish.\n\nBake for 30 minutes at 350 degrees F.\n\nIn large bowl, combine remaining ingredients.\n\nRemove squash from oven, fill with mix.\n\nBake for 30-40 more minutes, until squash tender.\n\nEnjoy!",
+    "ingredients": [
+      {
+        "name": "acorn squash",
+        "amount": 2
+      },
+      {
+        "name": "boiling water",
+        "amount": 1
+      },
+      {
+        "name": "apples chopped into 1.4 inch pieces",
+        "amount": 2
+      },
+      {
+        "name": "dried cranberries",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 1,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "melted butter",
+        "amount": 2,
+        "unit": "tablespoon"
+      }
+    ],
+    "id": "6",
+    "created": "2018-11-12T12:07:16.838Z",
+    "modified": "2018-11-12T12:07:16.838Z"
+  },
+  "7": {
+    "title": "Mic's Yorkshire Puds",
+    "description": "Put the flour and some seasoning into a large bowl.\n\nStir in eggs, one at a time.\n\nWhisk in milk until you have a smooth batter.\n\nChill in the fridge for at least 30 minutes.\n\nHeat oven to 220C/gas mark 7.\n\nPour the oil into the holes of a 8-hole muffin tin.\n\nHeat tin in the oven for 5 minutes.\n\nLadle the batter mix into the tin.\n\nBake for 30 minutes until well browned and risen.",
+    "ingredients": [
+      {
+        "name": "plain flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
+        "amount": 3
+      },
+      {
+        "name": "milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": 3,
+        "unit": "teaspoon"
+      }
+    ],
+    "id": "7",
+    "created": "2018-11-12T12:07:26.598Z",
+    "modified": "2018-11-12T12:07:26.598Z"
+  },
+  "8": {
+    "title": "Old-Fashioned Oatmeal Cookies",
+    "description": "Simmer raisins and water over medium heat until raisins are plump, about 15 minutes.\n\nDrain raisins, reserving the liquid.\n\nAdd enough water to reserved liquid to measure 1/2 cup.\n\nHeat oven to 400°.\n\nMix thoroughly shortening, sugar, eggs and vanilla.\n\nStir in reserved liquid.\n\nBlend in remaining ingredients.\n\nDrop dough by rounded teaspoonfuls about 2 inches apart onto ungreased baking sheet.\n\nBake 8 to 10 minutes or until light brown.\n\nAbout 6 1/2 dozen cookies.",
+    "ingredients": [
+      {
+        "name": "raisins",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "water",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "shortening",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "sugar",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "flour",
+        "amount": 2.5,
+        "unit": "cup"
+      },
+      {
+        "name": "soda",
+        "amount": 1,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 1,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "baking powder",
+        "amount": 0.5,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "cloves",
+        "amount": 0.5,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "oats",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "chopped nuts",
+        "amount": 0.5,
+        "unit": "cup"
+      }
+    ],
+    "id": "8",
+    "created": "2018-11-12T12:07:34.384Z",
+    "modified": "2018-11-12T12:07:34.384Z"
+  },
+  "9": {
+    "title": "Blueberry Oatmeal Squares",
+    "description": "Filling: In saucepan, bring blueberries, sugar and orange juice to boil; reduce heat and simmer until tender, about 10 minutes.\n\nWhisk cornstarch with 2 tbsp (25 mL) water; whisk into blueberries and boil, stirring, until thickened, about 1 minute.\n\nPlace plastic wrap directly on surface; refrigerate until cooled, about 1 hour.\n\nIn large bowl, whisk together oats, flour, sugar, orange rind and salt ; with pastry blender, cut in butter until in coarse crumbs.\n\nPress half into 8-inch (2 L) square parchment paper–lined metal cake pan; spread with blueberry filling.\n\nBake in centre of 350°F oven until light golden, about 45 minutes.\n\nLet cool on rack before cutting into squares.\n\n(Make-ahead: Cover and refrigerate for up to 2 days or overwrap with heavy-duty foil and freeze for up to 2 weeks.)",
+    "ingredients": [
+      {
+        "name": "rolled oats, (not instant)",
+        "amount": 2.5,
+        "unit": "cup"
+      },
+      {
+        "name": "all-purpose flour",
+        "amount": 1.25,
+        "unit": "cup"
+      },
+      {
+        "name": "grated orange rind",
+        "amount": 1,
+        "unit": "tablespoon"
+      },
+      {
+        "name": "salt",
+        "amount": 0.25,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "cold butter, cubed",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "packed brown sugar",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "fresh blueberries",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "granulated sugar",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "orange juice",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "cornstarch",
+        "amount": 4,
+        "unit": "teaspoon"
+      }
+    ],
+    "id": "9",
+    "created": "2018-11-12T12:07:42.637Z",
+    "modified": "2018-11-12T12:07:42.637Z"
+  },
+  "10": {
+    "title": "Curried chicken salad",
+    "description": "ARRANGE chicken in a single layer in a large pot.\n\nAdd water to just cover.\n\nBring to a boil over medium-high.\n\nFlip chicken, reduce heat to medium and simmer until cooked, about 6 more min.\n\nCool.\n\nSTIR mayo with lemon zest, juice, curry and salt in large bowl.\n\nUsing 2 forks, shred chicken, then stir into mayo mixture with mango, cranberries, green onions and celery.\n\nDivide among muffins with lettuce leaves\n\nSandwich with tops",
+    "ingredients": [
+      {
+        "name": "skinless, boneless chicken breasts, halved lengthwise",
+        "amount": 3
+      },
+      {
+        "name": "mayonnaise",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "lemon zest",
+        "amount": 1,
+        "unit": "tablespoon"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 1,
+        "unit": "tablespoon"
+      },
+      {
+        "name": "curry powder",
+        "amount": 1.5,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "salt",
+        "amount": 0.25,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "ripe mangoes, diced",
+        "amount": 2
+      },
+      {
+        "name": "dried cranberries",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "green onions, thinly sliced",
+        "amount": 2
+      },
+      {
+        "name": "celery stalk, finely chopped",
+        "amount": 1
+      },
+      {
+        "name": "Boston lettuce leaves",
+        "amount": 6
+      },
+      {
+        "name": "English muffins, toasted",
+        "amount": 6
+      }
+    ],
+    "id": "10",
+    "created": "2018-11-12T12:07:48.596Z",
+    "modified": "2018-11-12T12:07:48.596Z"
+  },
   "__meta": {
-    "lastId": 1
+    "lastId": 10
   }
 }
