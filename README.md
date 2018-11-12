@@ -26,6 +26,7 @@ Folow the preparation carefully. Do this before the challenge timeframe, so we c
 - Within this 120 minutes, you must send back your solution by skype or E-Mail
 - You may ask us questions via skype, during the whole challenge.
 - Code in whatever environment you feel confortable (IDE, Operating System)
+- Whenever you get stuck, run `npm run reset` an restart the servers
 - You may use the internet for research
 - You can not use the help of other people or robots
 - You only have **one try**, please be prepared and ready
