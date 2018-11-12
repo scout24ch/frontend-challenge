@@ -22,8 +22,8 @@ Folow the preparation carefully. Do this before the challenge timeframe, so we c
 
 ## Work
 - You'll get the challenge description at the beginning, via Skype
-- Time is 60 minutes
-- Within this 60 minutes, you must send back your solution by skype or E-Mail
+- Time is 120 minutes
+- Within this 120 minutes, you must send back your solution by skype or E-Mail
 - You may ask us questions via skype, during the whole challenge.
 - Code in whatever environment you feel confortable (IDE, Operating System)
 - You may use the internet for research
