@@ -197,7 +197,8 @@ definitions:
           - teaspoon
           - pinch
           - oz
-          - lb
+          - lbs
+          - floz
   IngredientList:
     type: array
     items:
