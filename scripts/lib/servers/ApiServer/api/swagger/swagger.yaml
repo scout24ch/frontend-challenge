@@ -176,7 +176,6 @@ definitions:
   Ingredient:
     required:
       - name
-      - amount
     properties:
       name:
         type: string
@@ -197,6 +196,8 @@ definitions:
           - tablespoon
           - teaspoon
           - pinch
+          - oz
+          - lb
   IngredientList:
     type: array
     items:
