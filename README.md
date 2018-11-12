@@ -1,13 +1,7 @@
 # Scout24 frontend challenge
 Allong with the link to this repository, you got also an appointment timeframe, when the challenge happens.
 
-## Three steps to pass the challenge
-1. [Preparation](#preparation)
-2. [Work](#work)
-3. [Presentation](#presentation)
-
-## Preparation 
-Folow the preparation carefully. Do this before the challenge timeframe, so we can start right ahead.
+## Preparation
 1. Install
    - [Skype](https://www.skype.com/en/)
    - [node](https://nodejs.org/en/download/) at least v8.x
