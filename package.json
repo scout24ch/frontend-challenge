@@ -6,7 +6,6 @@
   "main": "scripts/start.js",
   "scripts": {
     "start": "nodemon --ignore scripts/lib/servers/ApiServer/api/Storage/stores/recipes.json .",
-    "reset-db": "node scripts/reset-db.js",
     "swagger-edit": "swagger_swagger_fileName=scripts/lib/servers/ApiServer/api/swagger/swagger.yaml swagger project edit"
   },
   "repository": {
