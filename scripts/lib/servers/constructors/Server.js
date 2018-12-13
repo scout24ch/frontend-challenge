@@ -5,7 +5,7 @@ const chalk = require('chalk')
 const cors = require('cors')
 
 class Server {
-  constructor({ port, log, allowedOrigins = [] }) {
+  constructor({ port, log }) {
     this.port = port
     this.log = log
     this.name = this.constructor.name
@@ -41,13 +41,7 @@ class Server {
     })
 
     // add cors and preflight to all routes
-    if (allowedOrigins.length) {
-      app.use('*', cors({
-        origin: (origin, callback) => typeof origin === 'undefined' || allowedOrigins.includes(origin)
-          ? callback(null, true)
-          : callback(new Error('Not allowed by CORS'))
-      }))
-    }
+    app.use('*', cors())
 
     // create server
     const server = http.createServer(app)
