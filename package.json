@@ -20,7 +20,7 @@
     "data-store": "^3.1.0",
     "express": "^4.16.4",
     "fs-extra": "^7.0.1",
-    "js-yaml": "^3.12.1",
+    "js-yaml": "^3.12.2",
     "morgan": "^1.9.1",
     "swagger-express-mw": "^0.7.0",
     "swagger-ui-express": "^4.0.2"
