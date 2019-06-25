@@ -7,7 +7,9 @@
   "scripts": {
     "start": "nodemon --ignore scripts/lib/servers/ApiServer/api/Storage/stores/recipes.json .",
     "swagger-edit": "swagger_swagger_fileName=scripts/lib/servers/ApiServer/api/swagger/swagger.yaml swagger project edit",
-    "reset": "node scripts/lib/servers/ApiServer/reset-store.js"
+    "reset": "node scripts/lib/servers/ApiServer/reset-store.js",
+    "docker:start": "./scripts/docker-start.sh",
+    "docker:shell": "./scripts/docker-shell.sh"
   },
   "repository": {
     "type": "git",
