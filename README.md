@@ -1,31 +1,22 @@
 # Scout24 frontend challenge
-Allong with the link to this repository, you got also an appointment timeframe, when the challenge happens.
+Allong with the link to this repository you will get a PDF with the task and a deadline until it has to be finished.
 
 ## Preparation
-1. Install
-   - [Skype](https://www.skype.com/en/) - we need the chat only, no audio/camera.
-   - [node](https://nodejs.org/en/download/) - at least v8.x
-1. Connect to the Skype account you received and say "Hi, I'm preparing for the frontend challenge"
-1. [Download this repository](https://github.com/Scout24-CH/frontend-challenge/archive/master.zip) and unpack it
-1. Navigate to it's folder and run `npm i`
-1. Run `npm start` - this will bring up a simple web server (port 8080) and an API (port 8081)
-1. Navigate to [http://localhost:8080](http://localhost:8080) - and you should see this:
+1. Clone this repo to your local environment
+1. Go to the `frontend-challenge` directory
+1. Run `npm install` - this will install a webserver and the REST-API
+1. Run `npm start` - this will start the webserver on port 8080 and the REST-API on port 8081
+1. Navigate to http://localhost:8080 and you should see this:
 
 ![browser.png](docs/browser.png)
 
-## Work
-- You'll get the challenge description at the beginning, via Skype
-- Time is 120 minutes
-- Within this 120 minutes, you must send back your solution by skype or E-Mail
-- You may ask us questions via skype, during the whole challenge.
+1. In the `webroot` directory you'll find a basic template which you can use as starting point for your app (optional). If you rather want to use **Create React App** or or another React toolchain, install it into a new sub-directory: `npx create-react-app my-app`
+
+
+## Procedure
+- You'll get your task as PDF, read it carefully and follow the requirements
+- If you have questions, don't hasitade to reache out your contact person
 - Code in whatever environment you feel confortable (IDE, Operating System)
 - Whenever you get stuck, run `npm run reset` an restart the servers
-- You may use the internet for research
-- You can not use the help of other people or robots
-- You only have **one try**, please be prepared and ready
-
-## Presentation
-- If we like your work, we'll invite you to our office in Flamatt (Switzerland)
-- You get the chance to present and discuss your code 
-- A couple of Scout24 developers and HR will be your audience
-- A Q/A session follows the presentation, where we discuss some details
+- If you are finished, pack the whole `frontend-challenge` directory including your code into a ZIP file
+- Send back the ZIP file until the end of the deadline

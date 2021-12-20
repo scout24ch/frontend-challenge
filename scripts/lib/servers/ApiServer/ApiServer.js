@@ -6,7 +6,7 @@ const SwaggerExpress = require('swagger-express-mw')
 const swaggerUi = require('swagger-ui-express')
 const { Server } = require('../constructors')
 
-const swaggerFile = yaml.safeLoad(
+const swaggerFile = yaml.load(
   fs.readFileSync(
     path.join(
       __dirname, 'api', 'swagger', 'swagger.yaml'
